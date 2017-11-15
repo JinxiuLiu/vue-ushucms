@@ -4,7 +4,9 @@
         <div class="navmenu">
             <NavMenu></NavMenu>
         </div>
-        <router-view/>
+        <div class="container">
+            <router-view/>
+        </div>
     </div>
 </template>
 
@@ -47,6 +49,13 @@
             .el-submenu .el-menu-item {
                 min-width: 182px;
             }
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            margin-top: 106px;
+            margin-left: 200px;
+            border: 1px solid #d2dae9;
         }
     }
 </style>

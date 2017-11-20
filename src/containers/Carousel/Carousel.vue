@@ -21,8 +21,18 @@
                             </el-table-column>
                         </el-table>
                     </template>
+                    <div class="add-btn">
+                    	<el-button type="primary">　　添加　　</el-button>
+                    </div>
                 </el-col>
                 <el-col :span="12">
+                	<div class="add-img">
+                		<img src="" alt="">
+                		<div class="img-title">
+                			<p class="title">图片标题</p>
+                			<el-input v-model="imgTitle" placeholder="请输入内容"></el-input>
+                		</div>
+                	</div>
                 </el-col>
             </el-row>
         </div>
@@ -35,6 +45,7 @@
 	    data() {
 	        return {
 	        	cheacked: true,
+	        	imgTitle: '',
 	            tableData: [{
 	                bannerName: '王小虎',
 	                cheacked: true,
@@ -48,7 +59,9 @@
 	        }
 	    },
 	    methods: {
+	    	handleAffirm() {
 
+	    	}
 	    }
 	}
 
@@ -84,6 +97,26 @@
 	        .ushu-column {
 	        	display: flex;
 	        	justify-content: flex-end;
+	        }
+	        .add-btn {
+	        	display: flex;
+	        	justify-content: flex-end;
+	        	margin-top: 26px;
+	        	.el-button--primary {
+				    background-color: #41403f;
+				    border-color: #41403f;
+	        	}
+	        }
+	        .add-img {
+	        	margin-top: 20px;
+	        	margin-left: 20px;
+	        	background-color: #f9f9f9;
+	        	img {
+	        		display: block;
+	        		width: 100%;
+	        		height: 250px;
+	        		border: 1px solid #c8c8c8;
+	        	}
 	        }
 	    }
 	}

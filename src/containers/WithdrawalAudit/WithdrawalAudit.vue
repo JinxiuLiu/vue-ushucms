@@ -1,5 +1,5 @@
 <template>
-    <el-tabs v-model="activeName" @tab-click="handleClick">
+    <el-tabs v-model="activeName" @tab-click="handleAffirm">
         <el-tab-pane label="提现一级审核" name="first">
             <el-input placeholder="请输入用户名进行查找" suffix-icon="el-icon-search" v-model="inputSearch">
             </el-input>

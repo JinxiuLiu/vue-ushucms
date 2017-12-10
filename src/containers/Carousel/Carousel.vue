@@ -6,12 +6,12 @@
                 <el-col :span="12">
                     <template>
                         <el-table :data="tableData" :show-header="false" style="width: 100%">
-                            <el-table-column align="left">
+                            <el-table-column class-name="hoverWhite" align="left">
                                 <template slot-scope="scope">
                                     <span>{{ scope.row.bannerName }}</span>
                                 </template>
                             </el-table-column>
-                            <el-table-column align="right">
+                            <el-table-column class-name="hoverWhite" align="right">
                                 <template slot-scope="scope">
                                     <div class="ushu-column">
                                     	<el-switch v-model="scope.row.cheacked" active-color="#409EFF" inactive-color="#ff4444"></el-switch>
@@ -72,9 +72,6 @@
 	    .info {
 	        font-size: 14px;
 	        padding: 0 20px;
-	        .el-table--enable-row-hover .el-table__body tr:hover>td {
-	            background-color: #fff;
-	        }
 	        .el-button--text {
 	        	width: 40px;
 	        	font-size: 20px;

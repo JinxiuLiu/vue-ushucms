@@ -1,0 +1,12 @@
+.no-wrap() {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.no-more-wrap(@NumClamp: 2) {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: @NumClamp;
+	overflow: hidden;
+}

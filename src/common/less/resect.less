@@ -1,0 +1,58 @@
+// 轮播图-指示点-重置
+.yd-slider-pagination {
+	justify-content: flex-end;
+	padding: 0 .3rem;
+	.yd-slider-pagination-item {
+		margin: .1rem;
+		width: .1rem;
+		height: .1rem;
+		border-radius: 0;
+		background-color: #fff;
+	}
+	.yd-slider-pagination-item-active {
+		background-color: #eb2525;
+	}
+}
+
+// 重置Tab选型卡
+.yd-tab-nav-item {
+	color: #333;
+	font-size: 15px;
+	line-height: .8rem;
+	&:not(:last-child):after {
+		content: none;
+	}
+}
+
+.isFlxed {
+    width: 100%;
+    position:fixed;
+    top:0;
+    z-index:999;
+}
+
+.isFlxed~.yd-tab-panel {
+	padding-top: .8rem;
+}
+
+.yd-tab-nav .yd-tab-active:before {
+	width: .7rem;
+	margin-left: -.35rem;
+	bottom: 1px;
+}
+
+.yd-tab-nav:after {
+	bottom: -1px;
+}
+
+.yd-tab-nav:after {
+	border: 1px solid #e1e1e1;
+}
+
+.yd-tab-panel {
+	background-color: #f5f5f5;
+}
+
+.yd-tab-panel-item.yd-tab-active {
+	transition: none;
+}

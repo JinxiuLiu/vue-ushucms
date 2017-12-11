@@ -33,6 +33,12 @@ const User = (resolve) => {
 	})
 }
 
+const Details = (resolve) => {
+	import ('components/details/details').then((module) => {
+		resolve(module)
+	})
+}
+
 export default new Router({
 	routes: [
 		{
@@ -59,6 +65,10 @@ export default new Router({
 		{
 			path: '/user',
       		component: User,
+		},
+		{
+			path: '/details',
+      		component: Details,
 		}
 	]
 })

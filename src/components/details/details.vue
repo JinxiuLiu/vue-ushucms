@@ -225,18 +225,6 @@
 				font-size: @font-size-14;
 				color: @color-text-999;
 				text-indent: .3rem;
-				&::-webkit-input-placeholder {
-					color: @color-text-999;
-				}
-				&:-moz-placeholder {
-					color: @color-text-999;
-				}
-				&::-moz-placeholder {
-					color: @color-text-999;
-				}
-				&:-ms-input-placeholder {
-					color: @color-text-999;
-				}
 			}
 			.badge {
 				position: relative;

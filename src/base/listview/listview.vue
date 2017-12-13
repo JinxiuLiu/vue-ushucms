@@ -107,6 +107,7 @@
         padding: 0 .3rem;
         background-color: #fff;
         margin-bottom: .21rem;
+        border-bottom: 1px solid @color-border;
         .list-title {
             width: 100%;
             height: .84rem;
@@ -134,9 +135,10 @@
             color: @color-text-666;
             line-height: 20px;
             font-size: @font-size-14;
+            .no-more-wrap(3);
         }
         .info-img {
-            padding-bottom: .2rem;
+            margin-bottom: .2rem;
         }
         .list-img {
             width: 100%;
@@ -145,6 +147,7 @@
             justify-content: space-between;
             img {
                 width: 2.2rem;
+                border-radius: 6px;
             }
         }
         .list-bottom {
@@ -160,7 +163,7 @@
                 .leave {
                     display: flex;
                     align-items: center;
-                    padding-right: .3rem;
+                    padding-right: .2rem;
                 }
                 .browse {
                     display: flex;
@@ -207,6 +210,7 @@
                 width: 2.2rem;
                 height: 1.5rem;
                 margin-left: .1rem;
+                border-radius: 6px;
             }
         }
     }

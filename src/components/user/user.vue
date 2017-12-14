@@ -122,7 +122,7 @@
 				font-size: @font-size-16;
 				color: @color-text-333;
 				background-color: #fff;
-				box-shadow: 0 0 20px @color-border;
+				box-shadow: 0 0 15px @color-border;
 				position: absolute;
 				bottom: -1rem;
 				.experience {
